@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo completo de productos y servicios tecnológicos: infraestructura moderna, comercialización de hardware/software y gestión centralizada.">
+  <title>Productos y Servicios | ServiciosWeb Tech</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">SW</span>
+        <div class="logo-text">ServiciosWeb<span>Tech</span></div>
+      </a>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Productos & Servicios</a></li>
+        <li><a href="contacto.html" class="nav-cta">Contacto & Soporte</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <!-- CABECERA DE LA PÁGINA -->
+    <section class="container" style="padding-bottom: 1.5rem;">
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <span class="section-badge">Portafolio Especializado</span>
+        <h1 class="section-title">Productos y Servicios Tecnológicos</h1>
+        <p class="section-desc">
+          Soluciones integrales de hardware, software y servicios gestionados diseñadas para optimizar la operativa diaria y centralizar los recursos tecnológicos de su organización.
+        </p>
+      </div>
+
+      <!-- BOTONES DE FILTRADO INTERACTIVO -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">Todos los Servicios</button>
+        <button class="filter-btn" data-filter="infraestructura">Modernización de Infraestructura</button>
+        <button class="filter-btn" data-filter="gestion">Gestión Centralizada</button>
+        <button class="filter-btn" data-filter="productos">Comercialización HW & SW</button>
+      </div>
+
+      <!-- LISTA DE SERVICIOS / PRODUCTOS -->
+      <div class="features-grid">
+
+        <!-- SERVICIO 1 -->
+        <div class="card service-item" data-category="infraestructura">
+          <div class="card-icon">🖥️</div>
+          <h3 class="card-title">Virtualización de Servidores</h3>
+          <p class="card-text">
+            Consolidación de cargas de trabajo en servidores físicos de alto rendimiento usando hipervisores empresariales (KVM, Proxmox, VMware), reduciendo la huella física y el consumo energético.
+          </p>
+          <div class="card-tags">
+            <span class="tag">KVM / Proxmox</span>
+            <span class="tag">Consolidación</span>
+            <span class="tag">Alta Disponibilidad</span>
+          </div>
+          <a href="contacto.html" class="card-link">Cotizar este servicio →</a>
+        </div>
+
+        <!-- SERVICIO 2 -->
+        <div class="card service-item" data-category="gestion">
+          <div class="card-icon">🔐</div>
+          <h3 class="card-title">Gestión Centralizada de Identidades</h3>
+          <p class="card-text">
+            Implementación y administración de directorios centralizados (Active Directory / OpenLDAP) con políticas de grupo unificadas, control de accesos RBAC y autenticación Single Sign-On (SSO).
+          </p>
+          <div class="card-tags">
+            <span class="tag">Active Directory</span>
+            <span class="tag">OpenLDAP</span>
+            <span class="tag">SSO & RBAC</span>
+          </div>
+          <a href="contacto.html" class="card-link">Cotizar este servicio →</a>
+        </div>
+
+        <!-- SERVICIO 3 -->
+        <div class="card service-item" data-category="productos">
+          <div class="card-icon">📦</div>
+          <h3 class="card-title">Comercialización de Servidores Rack</h3>
+          <p class="card-text">
+            Distribución e instalación de servidores en rack de última generación, configurados a la medida con fuentes redundantes, controladoras RAID de hardware y memorias ECC garantizadas.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Servidores Rack</span>
+            <span class="tag">RAID Hardware</span>
+            <span class="tag">Garantía OEM</span>
+          </div>
+          <a href="contacto.html" class="card-link">Solicitar cotización →</a>
+        </div>
+
+        <!-- SERVICIO 4 -->
+        <div class="card service-item" data-category="infraestructura">
+          <div class="card-icon">🌐</div>
+          <h3 class="card-title">Infraestructura Web Apache & Redes</h3>
+          <p class="card-text">
+            Despliegue y hardening de servidores web Apache HTTP Server, configuración de VirtualHosts (`serviciosweb.com`), certificados SSL/TLS, proxies reversos y balanceo de carga.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Apache HTTP</span>
+            <span class="tag">VirtualHosts</span>
+            <span class="tag">Certificados SSL</span>
+          </div>
+          <a href="contacto.html" class="card-link">Cotizar este servicio →</a>
+        </div>
+
+        <!-- SERVICIO 5 -->
+        <div class="card service-item" data-category="gestion">
+          <div class="card-icon">📊</div>
+          <h3 class="card-title">Monitoreo Centralizado de Recursos</h3>
+          <p class="card-text">
+            Supervisión proactiva 24/7 de CPU, memoria, almacenamiento, tráfico de red y servicios críticos mediante consolas unificadas de telemetría y alertas automatizadas vía Slack/Correo.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Zabbix / Nagios</span>
+            <span class="tag">Grafana Dashboards</span>
+            <span class="tag">Alertas 24/7</span>
+          </div>
+          <a href="contacto.html" class="card-link">Cotizar este servicio →</a>
+        </div>
+
+        <!-- SERVICIO 6 -->
+        <div class="card service-item" data-category="productos">
+          <div class="card-icon">💿</div>
+          <h3 class="card-title">Licenciamiento de Software y SO</h3>
+          <p class="card-text">
+            Venta y gestión de licencias originales para sistemas operativos de servidor (Linux Enterprise, Windows Server), software de bases de datos, suites ofimáticas y herramientas de seguridad.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Linux Enterprise</span>
+            <span class="tag">Windows Server</span>
+            <span class="tag">Auditoría Legal</span>
+          </div>
+          <a href="contacto.html" class="card-link">Solicitar cotización →</a>
+        </div>
+
+        <!-- SERVICIO 7 -->
+        <div class="card service-item" data-category="gestion">
+          <div class="card-icon">💾</div>
+          <h3 class="card-title">Almacenamiento NAS/SAN y Backups 3-2-1</h3>
+          <p class="card-text">
+            Estrategias de respaldo centralizadas con deduplicación y cifrado, almacenamiento en red dedicado (SAN/NAS) y planes de recuperación ante desastres (DRP) probados periódicamente.
+          </p>
+          <div class="card-tags">
+            <span class="tag">NAS / SAN</span>
+            <span class="tag">Estrategia 3-2-1</span>
+            <span class="tag">DRP Plan</span>
+          </div>
+          <a href="contacto.html" class="card-link">Cotizar este servicio →</a>
+        </div>
+
+        <!-- SERVICIO 8 -->
+        <div class="card service-item" data-category="infraestructura">
+          <div class="card-icon">🛡️</div>
+          <h3 class="card-title">Ciberseguridad y Firewalls UTM</h3>
+          <p class="card-text">
+            Protección integral perimetral con firewalls de siguiente generación, túneles VPN IPsec/OpenVPN para trabajo remoto seguro, segmentación por VLANs e inspección profunda de paquetes.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Firewalls UTM</span>
+            <span class="tag">VLANs Seguras</span>
+            <span class="tag">VPN IPsec / SSL</span>
+          </div>
+          <a href="contacto.html" class="card-link">Cotizar este servicio →</a>
+        </div>
+
+      </div>
+
+      <!-- BANNER DE CONTACTO RÁPIDO -->
+      <div style="background: linear-gradient(135deg, #1e40af, #0ea5e9); color: #fff; padding: 3rem 2rem; border-radius: 14px; margin-top: 4rem; text-align: center;">
+        <h2 style="font-size: 1.8rem; margin-bottom: 0.8rem;">¿Requiere una solución tecnológica a la medida?</h2>
+        <p style="max-width: 650px; margin: 0 auto 1.8rem auto; font-size: 1rem; opacity: 0.95;">
+          Nuestros ingenieros de preventa e infraestructura evalúan su entorno actual y diseñan la arquitectura óptima para centralizar y respaldar el crecimiento de su empresa.
+        </p>
+        <a href="contacto.html" class="btn btn-solid-dark" style="background:#ffffff; color:#1e40af; font-weight:700;">Solicitar Diagnóstico Técnico</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>ServiciosWeb Tech S.A.</h3>
+        <p>
+          Especialistas en modernización de infraestructura informática, comercialización de productos tecnológicos y administración centralizada de operaciones corporativas.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Página Principal</a></li>
+          <li><a href="servicios.html">Catálogo de Servicios</a></li>
+          <li><a href="contacto.html">Contacto y Soporte</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Infraestructura</h4>
+        <ul>
+          <li>Servidor Apache HTTP</li>
+          <li>DocumentRoot VirtualHost</li>
+          <li>serviciosweb.com</li>
+          <li>Alta Disponibilidad</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        &copy; <span class="current-year"></span> ServiciosWeb Tech. Todos los derechos reservados.
+      </div>
+      <div>
+        <span class="server-badge">Host: serviciosweb.com/public_html</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
+

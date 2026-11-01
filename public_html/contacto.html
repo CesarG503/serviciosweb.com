@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contáctenos para modernizar la infraestructura de su empresa y centralizar sus recursos tecnológicos. Soporte técnico y atención personalizada.">
+  <title>Contacto y Soporte | ServiciosWeb Tech</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">SW</span>
+        <div class="logo-text">ServiciosWeb<span>Tech</span></div>
+      </a>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Productos & Servicios</a></li>
+        <li><a href="contacto.html" class="nav-cta active">Contacto & Soporte</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="container">
+      <div class="section-header">
+        <span class="section-badge">Atención Corporativa</span>
+        <h1 class="section-title">Contáctenos y Comencemos la Modernización</h1>
+        <p class="section-desc">
+          Complete el formulario o utilice nuestros canales de comunicación directa para recibir asesoría personalizada sobre productos tecnológicos y administración centralizada.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- COLUMNA IZQUIERDA: INFORMACIÓN Y DATOS DEL SERVIDOR -->
+        <div>
+          <div class="contact-info-card">
+            <h3 style="color:var(--dark); margin-bottom: 1.5rem; font-size: 1.25rem;">Canales de Contacto Directo</h3>
+
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div class="info-text">
+                <h4>Sede Central de Operaciones</h4>
+                <p>Distrito Tecnológico, Edificio DataCorp Piso 4</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div class="info-text">
+                <h4>Correo Electrónico</h4>
+                <p>soporte@serviciosweb.com | ventas@serviciosweb.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div class="info-text">
+                <h4>Mesa de Ayuda TI (24/7)</h4>
+                <p>+503 2200-8800 / +503 2200-8801</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">🕒</div>
+              <div class="info-text">
+                <h4>Horario Administrativo</h4>
+                <p>Lunes a Viernes: 8:00 AM - 6:00 PM (Soporte NOC continuo)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DETALLES DE VIRTUALHOST APACHE -->
+          <div class="contact-info-card" style="margin-top: 1.5rem; background-color: #0f172a; color: #cbd5e1; border-color: #334155;">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom: 1rem;">
+              <h4 style="color: #38bdf8; font-size: 1rem;">Parámetros del Servidor Web</h4>
+              <span style="background: #10b981; color: #fff; font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 4px; font-weight:600;">EN LÍNEA</span>
+            </div>
+            <p style="font-size: 0.85rem; line-height: 1.6; font-family: monospace; color: #94a3b8;">
+              <b style="color: #f1f5f9;">ServerName:</b> serviciosweb.com<br>
+              <b style="color: #f1f5f9;">DocumentRoot:</b> /var/www/serviciosweb.com/public_html<br>
+              <b style="color: #f1f5f9;">Software:</b> Apache HTTP Server<br>
+              <b style="color: #f1f5f9;">Protocolo:</b> HTTP/1.1 - HTTP/2
+            </p>
+          </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: FORMULARIO INTERACTIVO -->
+        <div class="contact-form-card">
+          <h3 style="color:var(--dark); margin-bottom: 0.5rem; font-size: 1.35rem;">Solicitud de Asesoría Técnica</h3>
+          <p style="color:var(--text-muted); font-size: 0.95rem; margin-bottom: 1.8rem;">
+            Indíquenos sus requerimientos operativos para asignarle un consultor en infraestructura.
+          </p>
+
+          <form id="techContactForm">
+            <div class="form-group">
+              <label for="nombre" class="form-label">Nombre completo o Representante *</label>
+              <input type="text" id="nombre" class="form-input" placeholder="Ej. Carlos Martínez" required>
+            </div>
+
+            <div class="form-group">
+              <label for="correo" class="form-label">Correo electrónico corporativo *</label>
+              <input type="email" id="correo" class="form-input" placeholder="carlos.martinez@empresa.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="empresa" class="form-label">Nombre de su empresa *</label>
+              <input type="text" id="empresa" class="form-input" placeholder="Ej. Corporación Andina S.A." required>
+            </div>
+
+            <div class="form-group">
+              <label for="servicio" class="form-label">Área de interés principal *</label>
+              <select id="servicio" class="form-select" required>
+                <option value="" disabled selected>Seleccione una opción...</option>
+                <option value="Modernización de Infraestructura y Servidores">Modernización de Infraestructura y Servidores</option>
+                <option value="Gestión Centralizada de Recursos (Active Directory / LDAP)">Gestión Centralizada de Recursos (Active Directory / LDAP)</option>
+                <option value="Comercialización de Hardware de Servidores / Redes">Comercialización de Hardware de Servidores / Redes</option>
+                <option value="Licenciamiento de Software y Sistemas Operativos">Licenciamiento de Software y Sistemas Operativos</option>
+                <option value="Monitoreo Continuo 24/7 y Almacenamiento NAS/SAN">Monitoreo Continuo 24/7 y Almacenamiento NAS/SAN</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje" class="form-label">Detalles del requerimiento *</label>
+              <textarea id="mensaje" rows="4" class="form-textarea" placeholder="Describa el estado actual de su infraestructura y los objetivos de centralización..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Solicitud de Información</button>
+
+            <!-- FEEDBACK DINÁMICO JS -->
+            <div id="formFeedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- SECCIÓN FAQ INTERACTIVA -->
+      <div class="faq-section">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-badge">Preguntas Frecuentes</span>
+          <h2 class="section-title">Preguntas Comunes sobre Centralización TI</h2>
+        </div>
+
+        <div style="max-width: 850px; margin: 0 auto;">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Qué beneficios aporta una administración centralizada frente a recursos dispersos?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Permite aplicar políticas de seguridad uniformes, gestionar usuarios desde un único punto de control, auditar accesos en tiempo real, reducir el tiempo dedicado a mantenimiento individual y responder rápidamente a cualquier eventualidad operativa.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Cómo se realiza la transición sin interrumpir las operaciones del negocio?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Ejecutamos proyectos por fases estructuradas: primero realizamos un diagnóstico y levantamiento del inventario, luego implementamos entornos paralelos de prueba y finalmente realizamos la migración en ventanas de mantenimiento nocturnas o programadas.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Qué tipo de hardware y software comercializa ServiciosWeb Tech?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Suministramos servidores en rack de marcas líderes, conmutadores (switches) administrables de capa 2 y 3, firewalls dedicados, unidades de almacenamiento masivo y licenciamiento legal corporativo para sistemas operativos y plataformas de productividad.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Este sitio web ya está optimizado para servidores Apache?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Sí, toda la estructura fue empaquetada dentro de `serviciosweb.com/public_html` utilizando rutas relativas limpias para que opere de inmediato al apuntar la directiva `DocumentRoot` de Apache hacia esta carpeta.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>ServiciosWeb Tech S.A.</h3>
+        <p>
+          Especialistas en modernización de infraestructura informática, comercialización de productos tecnológicos y administración centralizada de operaciones corporativas.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Página Principal</a></li>
+          <li><a href="servicios.html">Catálogo de Servicios</a></li>
+          <li><a href="contacto.html">Contacto y Soporte</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Infraestructura</h4>
+        <ul>
+          <li>Servidor Apache HTTP</li>
+          <li>DocumentRoot VirtualHost</li>
+          <li>serviciosweb.com</li>
+          <li>Alta Disponibilidad</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        &copy; <span class="current-year"></span> ServiciosWeb Tech. Todos los derechos reservados.
+      </div>
+      <div>
+        <span class="server-badge">Host: serviciosweb.com/public_html</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
+
